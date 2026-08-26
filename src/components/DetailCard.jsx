@@ -658,7 +658,7 @@ export default function DetailCard() {
         >
           <span>FREEDOM FINANCIAL SERVICES</span>
           <i />
-          <span>UNLEASHING YOUR REAL FREEDOM</span>
+          <span>Power By Nexo Visuals</span>
         </motion.footer>
       </div>
     </main>

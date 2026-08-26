@@ -237,7 +237,7 @@ export default function SplashScreen() {
           ease,
         }}
       >
-        Nexo Visuals <span>•</span> DIGITAL VISITING CARD
+        Power By Nexo Visuals <span>•</span> DIGITAL VISITING CARD
       </motion.div>
     </main>
   );
