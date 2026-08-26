@@ -1,0 +1,887 @@
+/* [project]/src/components/DetailCard.module.css [app-client] (css) */
+.DetailCard-module__OtU-ua__page {
+  --brand: #00a885;
+  --brand-dark: #007e66;
+  --brand-deep: #005e4d;
+  --brand-light: #eaf8f5;
+  --text: #17212b;
+  --text1: #2e2e2e;
+  --muted: #718096;
+  --border: #e5e9e8;
+  width: 100%;
+  min-height: 100svh;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  background: radial-gradient(circle at 50% 0, #00a8850e, #0000 30%), #fff;
+  font-family: Inter, SF Pro Display, Segoe UI, Helvetica Neue, Arial, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.DetailCard-module__OtU-ua__backgroundGlow {
+  filter: blur(10px);
+  pointer-events: none;
+  z-index: 0;
+  background: #00a8850b;
+  border-radius: 50%;
+  width: 420px;
+  height: 420px;
+  position: fixed;
+  top: -180px;
+  right: -180px;
+}
+
+.DetailCard-module__OtU-ua__backgroundRing {
+  pointer-events: none;
+  z-index: 0;
+  border: 1px solid #00a88514;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  position: fixed;
+  top: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.DetailCard-module__OtU-ua__container {
+  z-index: 1;
+  width: min(100% - 32px, 680px);
+  padding-top: max(34px, env(safe-area-inset-top));
+  padding-bottom: max(35px, env(safe-area-inset-bottom));
+  margin: 0 auto;
+  position: relative;
+}
+
+.DetailCard-module__OtU-ua__header {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.DetailCard-module__OtU-ua__iconWrap {
+  isolation: isolate;
+  justify-content: center;
+  align-items: center;
+  width: clamp(105px, 30vw, 145px);
+  margin: 0;
+  display: flex;
+  position: relative;
+}
+
+.DetailCard-module__OtU-ua__iconGlow {
+  z-index: 1;
+  aspect-ratio: 1;
+  filter: blur(24px);
+  pointer-events: none;
+  background: radial-gradient(circle, #00a88529, #00a8850a 60%, #0000 75%);
+  border-radius: 50%;
+  width: 72%;
+  position: absolute;
+}
+
+.DetailCard-module__OtU-ua__brandIcon {
+  z-index: 2;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 18px #0050401a);
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.DetailCard-module__OtU-ua__companyName {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 4px;
+  font-family: Inter, SF Pro Display, Segoe UI, Helvetica Neue, Arial, sans-serif;
+  display: flex;
+}
+
+.DetailCard-module__OtU-ua__companyMain {
+  color: var(--brand);
+  letter-spacing: -.035em;
+  font-size: clamp(23px, 5.2vw, 32px);
+  font-weight: 650;
+  line-height: 1;
+  display: block;
+}
+
+.DetailCard-module__OtU-ua__companySub {
+  color: var(--brand);
+  letter-spacing: .055em;
+  margin-top: 3px;
+  font-size: clamp(12px, 2.8vw, 17px);
+  font-weight: 650;
+  line-height: 1.05;
+  display: block;
+}
+
+.DetailCard-module__OtU-ua__tagline {
+  color: #7b8794;
+  letter-spacing: .085em;
+  text-align: center;
+  margin-top: 6px;
+  font-family: Inter, SF Pro Display, Segoe UI, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(9px, 2.2vw, 12px);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.DetailCard-module__OtU-ua__profile {
+  text-align: center;
+  width: 100%;
+  margin-top: 17px;
+}
+
+.DetailCard-module__OtU-ua__profile h1 {
+  color: var(--text);
+  letter-spacing: -.035em;
+  justify-content: center;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0;
+  font-family: Inter, SF Pro Display, Segoe UI, Helvetica Neue, Arial, sans-serif;
+  line-height: 1;
+  display: flex;
+}
+
+.DetailCard-module__OtU-ua__personName {
+  color: var(--text);
+  font-size: clamp(23px, 5.3vw, 32px);
+  font-weight: 650;
+  line-height: 1;
+  display: inline-block;
+}
+
+.DetailCard-module__OtU-ua__degree {
+  color: var(--text1);
+  letter-spacing: -.01em;
+  font-size: clamp(12px, 2.7vw, 16px);
+  font-weight: 450;
+  line-height: 1;
+  display: inline-block;
+}
+
+.DetailCard-module__OtU-ua__profile p {
+  color: var(--muted);
+  margin: 6px 0 0;
+  font-family: Inter, SF Pro Display, Segoe UI, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(12px, 2.5vw, 14px);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.DetailCard-module__OtU-ua__cards {
+  flex-direction: column;
+  gap: 13px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+}
+
+.DetailCard-module__OtU-ua__card {
+  border: 1px solid var(--border);
+  -webkit-tap-highlight-color: transparent;
+  background: linear-gradient(135deg, #fff 0%, #fcfdfd 100%);
+  border-radius: 22px;
+  align-items: center;
+  width: 100%;
+  min-height: 102px;
+  padding: 16px;
+  text-decoration: none;
+  transition: border-color .25s, box-shadow .25s, transform .25s;
+  display: flex;
+  position: relative;
+  box-shadow: 0 8px 30px #182b280b;
+}
+
+.DetailCard-module__OtU-ua__card:hover {
+  border-color: #00a88533;
+  box-shadow: 0 14px 36px #182b2814;
+}
+
+.DetailCard-module__OtU-ua__cardIcon {
+  width: 62px;
+  height: 62px;
+  color: var(--brand);
+  background: linear-gradient(145deg, #f5fcfa, #eaf8f5);
+  border: 1px solid #00a88521;
+  border-radius: 18px;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.DetailCard-module__OtU-ua__cardIcon svg {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+.DetailCard-module__OtU-ua__cardContent {
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  margin-left: 16px;
+  padding-right: 8px;
+  display: flex;
+}
+
+.DetailCard-module__OtU-ua__cardLabel {
+  color: var(--text);
+  letter-spacing: -.015em;
+  font-family: Inter, SF Pro Display, Segoe UI, Helvetica Neue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.DetailCard-module__OtU-ua__cardValue {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  margin-top: 5px;
+  font-family: Inter, SF Pro Display, Segoe UI, Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.DetailCard-module__OtU-ua__arrow {
+  color: #9aa6b2;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  transition: color .25s, transform .25s;
+  display: flex;
+}
+
+.DetailCard-module__OtU-ua__arrow svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.DetailCard-module__OtU-ua__card:hover .DetailCard-module__OtU-ua__arrow {
+  color: var(--brand);
+  transform: translate(2px, -2px);
+}
+
+.DetailCard-module__OtU-ua__actions {
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  margin-top: 25px;
+  display: grid;
+}
+
+.DetailCard-module__OtU-ua__primaryButton, .DetailCard-module__OtU-ua__secondaryButton {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 17px;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  min-height: 55px;
+  padding: 0 16px;
+  font-family: Inter, SF Pro Display, Segoe UI, Helvetica Neue, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  transition: transform .25s, box-shadow .25s, background .25s;
+  display: flex;
+}
+
+.DetailCard-module__OtU-ua__primaryButton svg, .DetailCard-module__OtU-ua__secondaryButton svg {
+  flex: none;
+  width: 19px;
+  height: 19px;
+}
+
+.DetailCard-module__OtU-ua__primaryButton {
+  border: 1px solid var(--brand);
+  background: var(--brand);
+  color: #fff;
+  box-shadow: 0 10px 25px #00a8852e;
+}
+
+.DetailCard-module__OtU-ua__primaryButton:hover {
+  box-shadow: 0 14px 30px #00a88540;
+}
+
+.DetailCard-module__OtU-ua__secondaryButton {
+  color: var(--brand);
+  background: #fff;
+  border: 1px solid #00a88540;
+}
+
+.DetailCard-module__OtU-ua__secondaryButton:hover {
+  background: #f5fcfa;
+  box-shadow: 0 8px 22px #00a88514;
+}
+
+.DetailCard-module__OtU-ua__footer {
+  color: #a3adaf;
+  letter-spacing: .18em;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1.5;
+  display: flex;
+}
+
+.DetailCard-module__OtU-ua__footer i {
+  background: var(--brand);
+  border-radius: 50%;
+  flex: none;
+  width: 3px;
+  height: 3px;
+}
+
+@media (max-width: 480px) {
+  .DetailCard-module__OtU-ua__container {
+    width: calc(100% - 24px);
+    padding-top: max(28px, env(safe-area-inset-top));
+    padding-bottom: max(30px, env(safe-area-inset-bottom));
+  }
+
+  .DetailCard-module__OtU-ua__iconWrap {
+    width: 125px;
+  }
+
+  .DetailCard-module__OtU-ua__companyName {
+    margin-top: 4px;
+  }
+
+  .DetailCard-module__OtU-ua__companyMain {
+    font-size: 23px;
+  }
+
+  .DetailCard-module__OtU-ua__companySub {
+    margin-top: 3px;
+    font-size: 12px;
+  }
+
+  .DetailCard-module__OtU-ua__tagline {
+    letter-spacing: .075em;
+    margin-top: 5px;
+    font-size: 9px;
+  }
+
+  .DetailCard-module__OtU-ua__profile {
+    margin-top: 17px;
+  }
+
+  .DetailCard-module__OtU-ua__personName {
+    font-size: 24px;
+  }
+
+  .DetailCard-module__OtU-ua__degree {
+    font-size: 13px;
+  }
+
+  .DetailCard-module__OtU-ua__profile p {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+
+  .DetailCard-module__OtU-ua__cards {
+    gap: 12px;
+    margin-top: 27px;
+  }
+
+  .DetailCard-module__OtU-ua__card {
+    border-radius: 20px;
+    min-height: 94px;
+    padding: 13px;
+  }
+
+  .DetailCard-module__OtU-ua__cardIcon {
+    border-radius: 16px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .DetailCard-module__OtU-ua__cardIcon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .DetailCard-module__OtU-ua__cardContent {
+    margin-left: 13px;
+    padding-right: 5px;
+  }
+
+  .DetailCard-module__OtU-ua__cardLabel {
+    font-size: 15px;
+  }
+
+  .DetailCard-module__OtU-ua__cardValue {
+    margin-top: 4px;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .DetailCard-module__OtU-ua__arrow {
+    width: 24px;
+    height: 24px;
+  }
+
+  .DetailCard-module__OtU-ua__arrow svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .DetailCard-module__OtU-ua__actions {
+    gap: 9px;
+    margin-top: 22px;
+  }
+
+  .DetailCard-module__OtU-ua__primaryButton, .DetailCard-module__OtU-ua__secondaryButton {
+    border-radius: 16px;
+    min-height: 52px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .DetailCard-module__OtU-ua__primaryButton svg, .DetailCard-module__OtU-ua__secondaryButton svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .DetailCard-module__OtU-ua__footer {
+    letter-spacing: .13em;
+    gap: 7px;
+    margin-top: 27px;
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 360px) {
+  .DetailCard-module__OtU-ua__container {
+    width: calc(100% - 20px);
+    padding-top: max(24px, env(safe-area-inset-top));
+  }
+
+  .DetailCard-module__OtU-ua__iconWrap {
+    width: 108px;
+  }
+
+  .DetailCard-module__OtU-ua__companyName {
+    margin-top: 4px;
+  }
+
+  .DetailCard-module__OtU-ua__companyMain {
+    font-size: 21px;
+  }
+
+  .DetailCard-module__OtU-ua__companySub {
+    margin-top: 2px;
+    font-size: 11px;
+  }
+
+  .DetailCard-module__OtU-ua__tagline {
+    letter-spacing: .065em;
+    font-size: 8px;
+  }
+
+  .DetailCard-module__OtU-ua__profile {
+    margin-top: 15px;
+  }
+
+  .DetailCard-module__OtU-ua__personName {
+    font-size: 22px;
+  }
+
+  .DetailCard-module__OtU-ua__degree {
+    font-size: 12px;
+  }
+
+  .DetailCard-module__OtU-ua__profile p {
+    font-size: 11px;
+  }
+
+  .DetailCard-module__OtU-ua__cards {
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .DetailCard-module__OtU-ua__card {
+    border-radius: 18px;
+    min-height: 88px;
+    padding: 11px;
+  }
+
+  .DetailCard-module__OtU-ua__cardIcon {
+    border-radius: 14px;
+    width: 51px;
+    height: 51px;
+  }
+
+  .DetailCard-module__OtU-ua__cardIcon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .DetailCard-module__OtU-ua__cardContent {
+    margin-left: 10px;
+  }
+
+  .DetailCard-module__OtU-ua__cardLabel {
+    font-size: 14px;
+  }
+
+  .DetailCard-module__OtU-ua__cardValue {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .DetailCard-module__OtU-ua__arrow {
+    width: 22px;
+    height: 22px;
+  }
+
+  .DetailCard-module__OtU-ua__arrow svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .DetailCard-module__OtU-ua__actions {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .DetailCard-module__OtU-ua__primaryButton, .DetailCard-module__OtU-ua__secondaryButton {
+    min-height: 49px;
+    font-size: 11px;
+  }
+
+  .DetailCard-module__OtU-ua__footer {
+    letter-spacing: .11em;
+    margin-top: 24px;
+    font-size: 6.5px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .DetailCard-module__OtU-ua__container {
+    width: min(100% - 40px, 620px);
+    padding-top: max(38px, env(safe-area-inset-top));
+    padding-bottom: max(40px, env(safe-area-inset-bottom));
+  }
+
+  .DetailCard-module__OtU-ua__iconWrap {
+    width: 140px;
+  }
+
+  .DetailCard-module__OtU-ua__companyName {
+    margin-top: 6px;
+  }
+
+  .DetailCard-module__OtU-ua__companyMain {
+    font-size: 28px;
+  }
+
+  .DetailCard-module__OtU-ua__companySub {
+    margin-top: 3px;
+    font-size: 14px;
+  }
+
+  .DetailCard-module__OtU-ua__tagline {
+    margin-top: 6px;
+    font-size: 10px;
+  }
+
+  .DetailCard-module__OtU-ua__profile {
+    margin-top: 21px;
+  }
+
+  .DetailCard-module__OtU-ua__personName {
+    font-size: 29px;
+  }
+
+  .DetailCard-module__OtU-ua__degree, .DetailCard-module__OtU-ua__profile p {
+    font-size: 14px;
+  }
+
+  .DetailCard-module__OtU-ua__cards {
+    gap: 14px;
+    margin-top: 29px;
+  }
+
+  .DetailCard-module__OtU-ua__card {
+    min-height: 104px;
+    padding: 16px;
+  }
+
+  .DetailCard-module__OtU-ua__cardIcon {
+    width: 61px;
+    height: 61px;
+  }
+
+  .DetailCard-module__OtU-ua__cardContent {
+    margin-left: 16px;
+  }
+
+  .DetailCard-module__OtU-ua__actions {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .DetailCard-module__OtU-ua__container {
+    width: min(100% - 48px, 680px);
+    padding-top: max(50px, env(safe-area-inset-top));
+    padding-bottom: max(45px, env(safe-area-inset-bottom));
+  }
+
+  .DetailCard-module__OtU-ua__iconWrap {
+    width: 155px;
+  }
+
+  .DetailCard-module__OtU-ua__companyName {
+    margin-top: 7px;
+  }
+
+  .DetailCard-module__OtU-ua__companyMain {
+    font-size: 32px;
+  }
+
+  .DetailCard-module__OtU-ua__companySub {
+    margin-top: 3px;
+    font-size: 17px;
+  }
+
+  .DetailCard-module__OtU-ua__tagline {
+    margin-top: 7px;
+    font-size: 12px;
+  }
+
+  .DetailCard-module__OtU-ua__profile {
+    margin-top: 23px;
+  }
+
+  .DetailCard-module__OtU-ua__personName {
+    font-size: 34px;
+  }
+
+  .DetailCard-module__OtU-ua__degree {
+    font-size: 16px;
+  }
+
+  .DetailCard-module__OtU-ua__profile p {
+    font-size: 15px;
+  }
+
+  .DetailCard-module__OtU-ua__cards {
+    gap: 15px;
+    margin-top: 34px;
+  }
+
+  .DetailCard-module__OtU-ua__card {
+    border-radius: 23px;
+    min-height: 112px;
+    padding: 19px;
+  }
+
+  .DetailCard-module__OtU-ua__cardIcon {
+    border-radius: 18px;
+    width: 66px;
+    height: 66px;
+  }
+
+  .DetailCard-module__OtU-ua__cardIcon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .DetailCard-module__OtU-ua__cardContent {
+    margin-left: 19px;
+  }
+
+  .DetailCard-module__OtU-ua__cardLabel {
+    font-size: 16px;
+  }
+
+  .DetailCard-module__OtU-ua__cardValue {
+    font-size: 14px;
+  }
+
+  .DetailCard-module__OtU-ua__actions {
+    margin-top: 27px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .DetailCard-module__OtU-ua__container {
+    width: 680px;
+    padding-top: 60px;
+  }
+
+  .DetailCard-module__OtU-ua__iconWrap {
+    width: 165px;
+  }
+
+  .DetailCard-module__OtU-ua__companyMain {
+    font-size: 34px;
+  }
+
+  .DetailCard-module__OtU-ua__companySub {
+    font-size: 18px;
+  }
+
+  .DetailCard-module__OtU-ua__tagline {
+    font-size: 12px;
+  }
+
+  .DetailCard-module__OtU-ua__profile h1 {
+    gap: 7px;
+  }
+
+  .DetailCard-module__OtU-ua__personName {
+    font-size: 36px;
+  }
+
+  .DetailCard-module__OtU-ua__degree {
+    font-size: 17px;
+  }
+
+  .DetailCard-module__OtU-ua__cards {
+    margin-top: 38px;
+  }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+  .DetailCard-module__OtU-ua__container {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  .DetailCard-module__OtU-ua__iconWrap {
+    width: 85px;
+  }
+
+  .DetailCard-module__OtU-ua__companyName {
+    margin-top: 3px;
+  }
+
+  .DetailCard-module__OtU-ua__companyMain {
+    font-size: 20px;
+  }
+
+  .DetailCard-module__OtU-ua__companySub {
+    margin-top: 2px;
+    font-size: 9px;
+  }
+
+  .DetailCard-module__OtU-ua__tagline {
+    margin-top: 3px;
+    font-size: 7px;
+  }
+
+  .DetailCard-module__OtU-ua__profile {
+    margin-top: 11px;
+  }
+
+  .DetailCard-module__OtU-ua__personName {
+    font-size: 21px;
+  }
+
+  .DetailCard-module__OtU-ua__degree {
+    font-size: 11px;
+  }
+
+  .DetailCard-module__OtU-ua__profile p {
+    margin-top: 4px;
+    font-size: 10px;
+  }
+
+  .DetailCard-module__OtU-ua__cards {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .DetailCard-module__OtU-ua__card {
+    border-radius: 16px;
+    min-height: 72px;
+    padding: 9px 12px;
+  }
+
+  .DetailCard-module__OtU-ua__cardIcon {
+    border-radius: 13px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .DetailCard-module__OtU-ua__cardIcon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .DetailCard-module__OtU-ua__cardContent {
+    margin-left: 10px;
+  }
+
+  .DetailCard-module__OtU-ua__cardLabel {
+    font-size: 13px;
+  }
+
+  .DetailCard-module__OtU-ua__cardValue {
+    margin-top: 2px;
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  .DetailCard-module__OtU-ua__arrow {
+    width: 22px;
+    height: 22px;
+  }
+
+  .DetailCard-module__OtU-ua__arrow svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .DetailCard-module__OtU-ua__actions {
+    margin-top: 16px;
+  }
+
+  .DetailCard-module__OtU-ua__primaryButton, .DetailCard-module__OtU-ua__secondaryButton {
+    min-height: 44px;
+  }
+
+  .DetailCard-module__OtU-ua__footer {
+    margin-top: 18px;
+  }
+}
+
+.DetailCard-module__OtU-ua__card:focus-visible, .DetailCard-module__OtU-ua__primaryButton:focus-visible, .DetailCard-module__OtU-ua__secondaryButton:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .DetailCard-module__OtU-ua__page, .DetailCard-module__OtU-ua__page *, .DetailCard-module__OtU-ua__page :before, .DetailCard-module__OtU-ua__page :after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/*# sourceMappingURL=src_components_DetailCard_module_0cudxo2.css.map*/

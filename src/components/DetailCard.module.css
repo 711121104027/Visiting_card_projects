@@ -1,0 +1,1509 @@
+/* =========================================================
+   DETAIL CARD
+   Freedom Financial Services
+========================================================= */
+
+.page {
+  --brand: #00a885;
+  --brand-dark: #007e66;
+  --brand-deep: #005e4d;
+  --brand-light: #eaf8f5;
+
+  --text: #17212b;
+  --text1: #2e2e2e;
+  --muted: #718096;
+  --border: #e5e9e8;
+
+  position: relative;
+
+  width: 100%;
+  min-height: 100svh;
+
+  overflow-x: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(0, 168, 133, 0.055),
+      transparent 30%
+    ),
+    #ffffff;
+
+  color: var(--text);
+
+  font-family:
+    "Inter",
+    "SF Pro Display",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.backgroundGlow {
+  position: fixed;
+
+  top: -180px;
+  right: -180px;
+
+  width: 420px;
+  height: 420px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 168, 133, 0.045);
+
+  filter: blur(10px);
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+
+.backgroundRing {
+  position: fixed;
+
+  top: -180px;
+  left: 50%;
+
+  width: 360px;
+  height: 360px;
+
+  border: 1px solid rgba(0, 168, 133, 0.08);
+
+  border-radius: 50%;
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.container {
+  position: relative;
+
+  z-index: 1;
+
+  width: min(calc(100% - 32px), 680px);
+
+  margin: 0 auto;
+
+  padding-top:
+    max(34px, env(safe-area-inset-top));
+
+  padding-bottom:
+    max(35px, env(safe-area-inset-bottom));
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   F/R LOGO
+========================================================= */
+
+.iconWrap {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: clamp(105px, 30vw, 145px);
+
+  margin: 0;
+
+  isolation: isolate;
+}
+
+
+/* Soft green glow */
+
+.iconGlow {
+  position: absolute;
+
+  z-index: 1;
+
+  width: 72%;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 168, 133, 0.16),
+      rgba(0, 168, 133, 0.04) 60%,
+      transparent 75%
+    );
+
+  filter: blur(24px);
+
+  pointer-events: none;
+}
+
+
+/* F/R logo image only */
+
+.brandIcon {
+  position: relative;
+
+  z-index: 2;
+
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(
+      0 8px 18px rgba(0, 80, 64, 0.10)
+    );
+}
+
+
+/* =========================================================
+   COMPANY NAME
+========================================================= */
+
+.companyName {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-top: 4px;
+
+  width: 100%;
+
+  text-align: center;
+
+  font-family:
+    "Inter",
+    "SF Pro Display",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+}
+
+
+/* FREEDOM */
+
+.companyMain {
+  display: block;
+
+  color: var(--brand);
+
+  font-size: clamp(23px, 5.2vw, 32px);
+
+  font-weight: 650;
+
+  line-height: 1;
+
+  letter-spacing: -0.035em;
+}
+
+
+/* FINANCIAL SERVICES */
+
+.companySub {
+  display: block;
+
+  margin-top: 3px;
+
+  color: var(--brand);
+
+  font-size: clamp(12px, 2.8vw, 17px);
+
+  font-weight: 650;
+
+  line-height: 1.05;
+
+  letter-spacing: 0.055em;
+}
+
+
+/* =========================================================
+   TAGLINE
+========================================================= */
+
+.tagline {
+  margin-top: 6px;
+
+  color: #7b8794;
+
+  font-family:
+    "Inter",
+    "SF Pro Display",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: clamp(9px, 2.2vw, 12px);
+
+  font-weight: 600;
+
+  line-height: 1.35;
+
+  letter-spacing: 0.085em;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.profile {
+  width: 100%;
+
+  margin-top: 17px;
+
+  text-align: center;
+}
+
+
+/* Guru Prasath + MBA */
+
+.profile h1 {
+  margin: 0;
+
+  display: flex;
+
+  align-items: baseline;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  color: var(--text);
+
+  font-family:
+    "Inter",
+    "SF Pro Display",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  line-height: 1;
+
+  letter-spacing: -0.035em;
+}
+
+
+/* Guru Prasath */
+
+.personName {
+  display: inline-block;
+
+  color: var(--text);
+
+  font-size: clamp(23px, 5.3vw, 32px);
+
+  font-weight: 650;
+
+  line-height: 1;
+}
+
+
+/* MBA */
+
+.degree {
+  display: inline-block;
+
+  color: var(--text1);
+
+  font-size: clamp(12px, 2.7vw, 16px);
+
+  font-weight: 450;
+
+  line-height: 1;
+
+  letter-spacing: -0.01em;
+}
+
+
+/* Founder and Lead Consultant */
+
+.profile p {
+  margin: 6px 0 0;
+
+  color: var(--muted);
+
+  font-family:
+    "Inter",
+    "SF Pro Display",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: clamp(12px, 2.5vw, 14px);
+
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   CONTACT CARDS
+========================================================= */
+
+.cards {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 13px;
+
+  width: 100%;
+
+  margin-top: 30px;
+}
+
+
+.card {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+
+  min-height: 102px;
+
+  padding: 16px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #fcfdfd 100%
+    );
+
+  box-shadow:
+    0 8px 30px rgba(24, 43, 40, 0.045);
+
+  text-decoration: none;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+.card:hover {
+  border-color: rgba(0, 168, 133, 0.2);
+
+  box-shadow:
+    0 14px 36px rgba(24, 43, 40, 0.08);
+}
+
+
+/* =========================================================
+   CARD ICON
+========================================================= */
+
+.cardIcon {
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 62px;
+  height: 62px;
+
+  border: 1px solid rgba(0, 168, 133, 0.13);
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f5fcfa,
+      #eaf8f5
+    );
+
+  color: var(--brand);
+}
+
+
+.cardIcon svg {
+  width: 25px;
+  height: 25px;
+
+  display: block;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.cardContent {
+  min-width: 0;
+
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  margin-left: 16px;
+
+  padding-right: 8px;
+}
+
+
+.cardLabel {
+  color: var(--text);
+
+  font-family:
+    "Inter",
+    "SF Pro Display",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  line-height: 1.3;
+
+  letter-spacing: -0.015em;
+}
+
+
+.cardValue {
+  margin-top: 5px;
+
+  color: var(--muted);
+
+  font-family:
+    "Inter",
+    "SF Pro Display",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  overflow-wrap: anywhere;
+
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.arrow {
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  color: #9aa6b2;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.arrow svg {
+  width: 20px;
+  height: 20px;
+
+  display: block;
+}
+
+
+.card:hover .arrow {
+  color: var(--brand);
+
+  transform: translate(2px, -2px);
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.actions {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+
+  width: 100%;
+
+  margin-top: 25px;
+}
+
+
+.primaryButton,
+.secondaryButton {
+  min-height: 55px;
+
+  border-radius: 17px;
+
+  padding: 0 16px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  font-family:
+    "Inter",
+    "SF Pro Display",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+.primaryButton svg,
+.secondaryButton svg {
+  width: 19px;
+  height: 19px;
+
+  flex: 0 0 auto;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.primaryButton {
+  border: 1px solid var(--brand);
+
+  background: var(--brand);
+
+  color: #ffffff;
+
+  box-shadow:
+    0 10px 25px rgba(0, 168, 133, 0.18);
+}
+
+
+.primaryButton:hover {
+  box-shadow:
+    0 14px 30px rgba(0, 168, 133, 0.25);
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.secondaryButton {
+  border: 1px solid rgba(0, 168, 133, 0.25);
+
+  background: #ffffff;
+
+  color: var(--brand);
+}
+
+
+.secondaryButton:hover {
+  background: #f5fcfa;
+
+  box-shadow:
+    0 8px 22px rgba(0, 168, 133, 0.08);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  width: 100%;
+
+  margin-top: 30px;
+
+  color: #a3adaf;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+.footer i {
+  width: 3px;
+  height: 3px;
+
+  flex: 0 0 auto;
+
+  border-radius: 50%;
+
+  background: var(--brand);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 24px);
+
+    padding-top:
+      max(28px, env(safe-area-inset-top));
+
+    padding-bottom:
+      max(30px, env(safe-area-inset-bottom));
+  }
+
+
+  /* F/R logo */
+
+  .iconWrap {
+    width: 125px;
+  }
+
+
+  /* Company */
+
+  .companyName {
+    margin-top: 4px;
+  }
+
+
+  .companyMain {
+    font-size: 23px;
+  }
+
+
+  .companySub {
+    margin-top: 3px;
+
+    font-size: 12px;
+  }
+
+
+  /* Tagline */
+
+  .tagline {
+    margin-top: 5px;
+
+    font-size: 9px;
+
+    letter-spacing: 0.075em;
+  }
+
+
+  /* Profile */
+
+  .profile {
+    margin-top: 17px;
+  }
+
+
+  .personName {
+    font-size: 24px;
+  }
+
+
+  .degree {
+    font-size: 13px;
+  }
+
+
+  .profile p {
+    margin-top: 6px;
+
+    font-size: 12px;
+  }
+
+
+  /* Cards */
+
+  .cards {
+    gap: 12px;
+
+    margin-top: 27px;
+  }
+
+
+  .card {
+    min-height: 94px;
+
+    padding: 13px;
+
+    border-radius: 20px;
+  }
+
+
+  .cardIcon {
+    width: 56px;
+    height: 56px;
+
+    border-radius: 16px;
+  }
+
+
+  .cardIcon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+
+  .cardContent {
+    margin-left: 13px;
+
+    padding-right: 5px;
+  }
+
+
+  .cardLabel {
+    font-size: 15px;
+  }
+
+
+  .cardValue {
+    margin-top: 4px;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+  }
+
+
+  .arrow {
+    width: 24px;
+    height: 24px;
+  }
+
+
+  .arrow svg {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* Buttons */
+
+  .actions {
+    gap: 9px;
+
+    margin-top: 22px;
+  }
+
+
+  .primaryButton,
+  .secondaryButton {
+    min-height: 52px;
+
+    padding: 0 10px;
+
+    font-size: 12px;
+
+    border-radius: 16px;
+  }
+
+
+  .primaryButton svg,
+  .secondaryButton svg {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    margin-top: 27px;
+
+    font-size: 7px;
+
+    letter-spacing: 0.13em;
+
+    gap: 7px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+  .container {
+    width: calc(100% - 20px);
+
+    padding-top:
+      max(24px, env(safe-area-inset-top));
+  }
+
+
+  .iconWrap {
+    width: 108px;
+  }
+
+
+  .companyName {
+    margin-top: 4px;
+  }
+
+
+  .companyMain {
+    font-size: 21px;
+  }
+
+
+  .companySub {
+    margin-top: 2px;
+
+    font-size: 11px;
+  }
+
+
+  .tagline {
+    font-size: 8px;
+
+    letter-spacing: 0.065em;
+  }
+
+
+  .profile {
+    margin-top: 15px;
+  }
+
+
+  .personName {
+    font-size: 22px;
+  }
+
+
+  .degree {
+    font-size: 12px;
+  }
+
+
+  .profile p {
+    font-size: 11px;
+  }
+
+
+  .cards {
+    margin-top: 24px;
+
+    gap: 10px;
+  }
+
+
+  .card {
+    min-height: 88px;
+
+    padding: 11px;
+
+    border-radius: 18px;
+  }
+
+
+  .cardIcon {
+    width: 51px;
+    height: 51px;
+
+    border-radius: 14px;
+  }
+
+
+  .cardIcon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+
+  .cardContent {
+    margin-left: 10px;
+  }
+
+
+  .cardLabel {
+    font-size: 14px;
+  }
+
+
+  .cardValue {
+    font-size: 12px;
+
+    line-height: 1.4;
+  }
+
+
+  .arrow {
+    width: 22px;
+    height: 22px;
+  }
+
+
+  .arrow svg {
+    width: 17px;
+    height: 17px;
+  }
+
+
+  .actions {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+
+    margin-top: 20px;
+  }
+
+
+  .primaryButton,
+  .secondaryButton {
+    min-height: 49px;
+
+    font-size: 11px;
+  }
+
+
+  .footer {
+    margin-top: 24px;
+
+    font-size: 6.5px;
+
+    letter-spacing: 0.11em;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    width: min(calc(100% - 40px), 620px);
+
+    padding-top:
+      max(38px, env(safe-area-inset-top));
+
+    padding-bottom:
+      max(40px, env(safe-area-inset-bottom));
+  }
+
+
+  .iconWrap {
+    width: 140px;
+  }
+
+
+  .companyName {
+    margin-top: 6px;
+  }
+
+
+  .companyMain {
+    font-size: 28px;
+  }
+
+
+  .companySub {
+    font-size: 14px;
+
+    margin-top: 3px;
+  }
+
+
+  .tagline {
+    margin-top: 6px;
+
+    font-size: 10px;
+  }
+
+
+  .profile {
+    margin-top: 21px;
+  }
+
+
+  .personName {
+    font-size: 29px;
+  }
+
+
+  .degree {
+    font-size: 14px;
+  }
+
+
+  .profile p {
+    font-size: 14px;
+  }
+
+
+  .cards {
+    gap: 14px;
+
+    margin-top: 29px;
+  }
+
+
+  .card {
+    min-height: 104px;
+
+    padding: 16px;
+  }
+
+
+  .cardIcon {
+    width: 61px;
+    height: 61px;
+  }
+
+
+  .cardContent {
+    margin-left: 16px;
+  }
+
+
+  .actions {
+    margin-top: 25px;
+  }
+}
+
+
+/* =========================================================
+   TABLET / DESKTOP
+========================================================= */
+
+@media (min-width: 768px) {
+  .container {
+    width: min(calc(100% - 48px), 680px);
+
+    padding-top:
+      max(50px, env(safe-area-inset-top));
+
+    padding-bottom:
+      max(45px, env(safe-area-inset-bottom));
+  }
+
+
+  .iconWrap {
+    width: 155px;
+  }
+
+
+  .companyName {
+    margin-top: 7px;
+  }
+
+
+  .companyMain {
+    font-size: 32px;
+  }
+
+
+  .companySub {
+    font-size: 17px;
+
+    margin-top: 3px;
+  }
+
+
+  .tagline {
+    margin-top: 7px;
+
+    font-size: 12px;
+  }
+
+
+  .profile {
+    margin-top: 23px;
+  }
+
+
+  .personName {
+    font-size: 34px;
+  }
+
+
+  .degree {
+    font-size: 16px;
+  }
+
+
+  .profile p {
+    font-size: 15px;
+  }
+
+
+  .cards {
+    gap: 15px;
+
+    margin-top: 34px;
+  }
+
+
+  .card {
+    min-height: 112px;
+
+    padding: 19px;
+
+    border-radius: 23px;
+  }
+
+
+  .cardIcon {
+    width: 66px;
+    height: 66px;
+
+    border-radius: 18px;
+  }
+
+
+  .cardIcon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+
+  .cardContent {
+    margin-left: 19px;
+  }
+
+
+  .cardLabel {
+    font-size: 16px;
+  }
+
+
+  .cardValue {
+    font-size: 14px;
+  }
+
+
+  .actions {
+    margin-top: 27px;
+  }
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 680px;
+
+    padding-top: 60px;
+  }
+
+
+  .iconWrap {
+    width: 165px;
+  }
+
+
+  .companyMain {
+    font-size: 34px;
+  }
+
+
+  .companySub {
+    font-size: 18px;
+  }
+
+
+  .tagline {
+    font-size: 12px;
+  }
+
+
+  .profile h1 {
+    gap: 7px;
+  }
+
+
+  .personName {
+    font-size: 36px;
+  }
+
+
+  .degree {
+    font-size: 17px;
+  }
+
+
+  .cards {
+    margin-top: 38px;
+  }
+}
+
+
+/* =========================================================
+   LANDSCAPE MOBILE
+========================================================= */
+
+@media (max-height: 600px) and (orientation: landscape) {
+  .container {
+    padding-top: 20px;
+
+    padding-bottom: 25px;
+  }
+
+
+  .iconWrap {
+    width: 85px;
+  }
+
+
+  .companyName {
+    margin-top: 3px;
+  }
+
+
+  .companyMain {
+    font-size: 20px;
+  }
+
+
+  .companySub {
+    margin-top: 2px;
+
+    font-size: 9px;
+  }
+
+
+  .tagline {
+    margin-top: 3px;
+
+    font-size: 7px;
+  }
+
+
+  .profile {
+    margin-top: 11px;
+  }
+
+
+  .personName {
+    font-size: 21px;
+  }
+
+
+  .degree {
+    font-size: 11px;
+  }
+
+
+  .profile p {
+    margin-top: 4px;
+
+    font-size: 10px;
+  }
+
+
+  .cards {
+    margin-top: 18px;
+
+    gap: 8px;
+  }
+
+
+  .card {
+    min-height: 72px;
+
+    padding: 9px 12px;
+
+    border-radius: 16px;
+  }
+
+
+  .cardIcon {
+    width: 46px;
+    height: 46px;
+
+    border-radius: 13px;
+  }
+
+
+  .cardIcon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  .cardContent {
+    margin-left: 10px;
+  }
+
+
+  .cardLabel {
+    font-size: 13px;
+  }
+
+
+  .cardValue {
+    margin-top: 2px;
+
+    font-size: 11px;
+
+    line-height: 1.3;
+  }
+
+
+  .arrow {
+    width: 22px;
+    height: 22px;
+  }
+
+
+  .arrow svg {
+    width: 17px;
+    height: 17px;
+  }
+
+
+  .actions {
+    margin-top: 16px;
+  }
+
+
+  .primaryButton,
+  .secondaryButton {
+    min-height: 44px;
+  }
+
+
+  .footer {
+    margin-top: 18px;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.card:focus-visible,
+.primaryButton:focus-visible,
+.secondaryButton:focus-visible {
+  outline: 2px solid var(--brand);
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .page,
+  .page *,
+  .page *::before,
+  .page *::after {
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+
+    scroll-behavior: auto !important;
+  }
+}
