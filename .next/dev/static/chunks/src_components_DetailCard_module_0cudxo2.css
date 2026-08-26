@@ -180,6 +180,7 @@
   width: 34px;
   height: 34px;
   display: block;
+  transform: translateY(-4px);
 }
 
 .DetailCard-module__OtU-ua__profile p {
@@ -415,6 +416,7 @@
   .DetailCard-module__OtU-ua__cfpLogo {
     width: 28px;
     height: 28px;
+    transform: translateY(-3px);
   }
 
   .DetailCard-module__OtU-ua__profile p {
@@ -541,6 +543,7 @@
   .DetailCard-module__OtU-ua__cfpLogo {
     width: 25px;
     height: 25px;
+    transform: translateY(-2px);
   }
 
   .DetailCard-module__OtU-ua__profile p {

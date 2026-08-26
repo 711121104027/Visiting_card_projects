@@ -372,6 +372,7 @@
   width: 34px;
   height: 34px;
   object-fit: contain;
+  transform: translateY(-4px);
 }
 
 
@@ -829,6 +830,7 @@
 .cfpLogo {
   width: 28px;
   height: 28px;
+  transform: translateY(-3px);
 }
 
 
@@ -1009,6 +1011,7 @@
 .cfpLogo {
   width: 25px;
   height: 25px;
+  transform: translateY(-2px);
 }
 
 
