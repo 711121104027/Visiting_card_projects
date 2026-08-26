@@ -530,10 +530,20 @@ export default function DetailCard() {
             }}
           >
             <h1>
-              <span className={styles.personName}>{contact.name}</span>
+  <span className={styles.personName}>{contact.name}</span>
 
-              <span className={styles.degree}>{contact.degree}</span>
-            </h1>
+  <span className={styles.degreeGroup}>
+    <span className={styles.degree}>{contact.degree}</span>
+
+    <Image
+      src="/assets/CFP_logo.png"
+      alt="CFP"
+      width={500}
+      height={500}
+      className={styles.cfpLogo}
+    />
+  </span>
+</h1>
 
             <p>{contact.position}</p>
           </motion.div>

@@ -168,6 +168,20 @@
   display: inline-block;
 }
 
+.DetailCard-module__OtU-ua__degreeGroup {
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+  display: inline-flex;
+}
+
+.DetailCard-module__OtU-ua__cfpLogo {
+  object-fit: contain;
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+
 .DetailCard-module__OtU-ua__profile p {
   color: var(--muted);
   margin: 6px 0 0;
@@ -394,6 +408,15 @@
     font-size: 13px;
   }
 
+  .DetailCard-module__OtU-ua__degreeGroup {
+    gap: 6px;
+  }
+
+  .DetailCard-module__OtU-ua__cfpLogo {
+    width: 28px;
+    height: 28px;
+  }
+
   .DetailCard-module__OtU-ua__profile p {
     margin-top: 6px;
     font-size: 12px;
@@ -509,6 +532,15 @@
 
   .DetailCard-module__OtU-ua__degree {
     font-size: 12px;
+  }
+
+  .DetailCard-module__OtU-ua__degreeGroup {
+    gap: 5px;
+  }
+
+  .DetailCard-module__OtU-ua__cfpLogo {
+    width: 25px;
+    height: 25px;
   }
 
   .DetailCard-module__OtU-ua__profile p {

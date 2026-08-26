@@ -443,11 +443,13 @@ __turbopack_context__.v({
   "cardLabel": "DetailCard-module__OtU-ua__cardLabel",
   "cardValue": "DetailCard-module__OtU-ua__cardValue",
   "cards": "DetailCard-module__OtU-ua__cards",
+  "cfpLogo": "DetailCard-module__OtU-ua__cfpLogo",
   "companyMain": "DetailCard-module__OtU-ua__companyMain",
   "companyName": "DetailCard-module__OtU-ua__companyName",
   "companySub": "DetailCard-module__OtU-ua__companySub",
   "container": "DetailCard-module__OtU-ua__container",
   "degree": "DetailCard-module__OtU-ua__degree",
+  "degreeGroup": "DetailCard-module__OtU-ua__degreeGroup",
   "footer": "DetailCard-module__OtU-ua__footer",
   "header": "DetailCard-module__OtU-ua__header",
   "iconGlow": "DetailCard-module__OtU-ua__iconGlow",
@@ -1211,15 +1213,35 @@ function DetailCard() {
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/DetailCard.jsx",
                                                 lineNumber: 533,
-                                                columnNumber: 15
+                                                columnNumber: 3
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$DetailCard$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].degree,
-                                                children: contact.degree
-                                            }, void 0, false, {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$DetailCard$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].degreeGroup,
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$DetailCard$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].degree,
+                                                        children: contact.degree
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/DetailCard.jsx",
+                                                        lineNumber: 536,
+                                                        columnNumber: 5
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                        src: "/assets/CFP_logo.png",
+                                                        alt: "CFP",
+                                                        width: 500,
+                                                        height: 500,
+                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$DetailCard$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].cfpLogo
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/DetailCard.jsx",
+                                                        lineNumber: 538,
+                                                        columnNumber: 5
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/components/DetailCard.jsx",
                                                 lineNumber: 535,
-                                                columnNumber: 15
+                                                columnNumber: 3
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -1231,7 +1253,7 @@ function DetailCard() {
                                         children: contact.position
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/DetailCard.jsx",
-                                        lineNumber: 538,
+                                        lineNumber: 548,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -1284,12 +1306,12 @@ function DetailCard() {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$DetailCard$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].cardIcon,
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {}, void 0, false, {
                                             fileName: "[project]/src/components/DetailCard.jsx",
-                                            lineNumber: 582,
+                                            lineNumber: 592,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/DetailCard.jsx",
-                                        lineNumber: 581,
+                                        lineNumber: 591,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1300,7 +1322,7 @@ function DetailCard() {
                                                 children: item.label
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/DetailCard.jsx",
-                                                lineNumber: 586,
+                                                lineNumber: 596,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1308,37 +1330,37 @@ function DetailCard() {
                                                 children: item.value
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/DetailCard.jsx",
-                                                lineNumber: 588,
+                                                lineNumber: 598,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/DetailCard.jsx",
-                                        lineNumber: 585,
+                                        lineNumber: 595,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$DetailCard$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].arrow,
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ArrowIcon, {}, void 0, false, {
                                             fileName: "[project]/src/components/DetailCard.jsx",
-                                            lineNumber: 592,
+                                            lineNumber: 602,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/DetailCard.jsx",
-                                        lineNumber: 591,
+                                        lineNumber: 601,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, item.label, true, {
                                 fileName: "[project]/src/components/DetailCard.jsx",
-                                lineNumber: 551,
+                                lineNumber: 561,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/components/DetailCard.jsx",
-                        lineNumber: 546,
+                        lineNumber: 556,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1368,20 +1390,20 @@ function DetailCard() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ContactIcon, {}, void 0, false, {
                                         fileName: "[project]/src/components/DetailCard.jsx",
-                                        lineNumber: 624,
+                                        lineNumber: 634,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: "Add Contact"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/DetailCard.jsx",
-                                        lineNumber: 625,
+                                        lineNumber: 635,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/DetailCard.jsx",
-                                lineNumber: 618,
+                                lineNumber: 628,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -1396,26 +1418,26 @@ function DetailCard() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ShareIcon, {}, void 0, false, {
                                         fileName: "[project]/src/components/DetailCard.jsx",
-                                        lineNumber: 634,
+                                        lineNumber: 644,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: copied ? "Link Copied" : "Share Card"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/DetailCard.jsx",
-                                        lineNumber: 635,
+                                        lineNumber: 645,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/DetailCard.jsx",
-                                lineNumber: 628,
+                                lineNumber: 638,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/DetailCard.jsx",
-                        lineNumber: 603,
+                        lineNumber: 613,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].footer, {
@@ -1435,25 +1457,25 @@ function DetailCard() {
                                 children: "FREEDOM FINANCIAL SERVICES"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/DetailCard.jsx",
-                                lineNumber: 649,
+                                lineNumber: 659,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {}, void 0, false, {
                                 fileName: "[project]/src/components/DetailCard.jsx",
-                                lineNumber: 650,
+                                lineNumber: 660,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: "UNLEASHING YOUR REAL FREEDOM"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/DetailCard.jsx",
-                                lineNumber: 651,
+                                lineNumber: 661,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/DetailCard.jsx",
-                        lineNumber: 640,
+                        lineNumber: 650,
                         columnNumber: 9
                     }, this)
                 ]

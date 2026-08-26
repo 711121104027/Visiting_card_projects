@@ -359,6 +359,21 @@
   letter-spacing: -0.01em;
 }
 
+/* MBA + CFP logo */
+.degreeGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+}
+
+.cfpLogo {
+  display: block;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
 
 /* Founder and Lead Consultant */
 
@@ -807,6 +822,15 @@
     font-size: 13px;
   }
 
+  .degreeGroup {
+  gap: 6px;
+}
+
+.cfpLogo {
+  width: 28px;
+  height: 28px;
+}
+
 
   .profile p {
     margin-top: 6px;
@@ -977,6 +1001,15 @@
   .degree {
     font-size: 12px;
   }
+
+  .degreeGroup {
+  gap: 5px;
+}
+
+.cfpLogo {
+  width: 25px;
+  height: 25px;
+}
 
 
   .profile p {
